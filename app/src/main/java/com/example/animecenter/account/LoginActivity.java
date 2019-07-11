@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                    Log.d("TAG", getString(R.string.theinterstitial));
                 }
                 startActivity(new Intent(LoginActivity.this, SignupActivity.class));
             }
@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                    Log.d("TAG",getString(R.string.theinterstitial));
                 }
                 startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
             }
@@ -94,18 +94,18 @@ public class LoginActivity extends AppCompatActivity {
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                    Log.d("TAG", getString(R.string.theinterstitial));
                 }
                 String email = inputEmail.getText().toString();
                 final String password = inputPassword.getText().toString();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.enter_email), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.enter_pass), Toast.LENGTH_SHORT).show();
                     return;
                 }
 

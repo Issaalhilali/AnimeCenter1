@@ -59,4 +59,25 @@
     <string name="get_App">get App Anime Center</string>
     <string name="get_Anime">Anime Center app you can get now on link https://play.google.com/store</string>
     <string name="get_click_share">you click on menu share</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="Home">this is Home</string>
+    <string name="logout_is">this is logout</string>
+    <string name="is_setting">this is settings</string>
+    <string name="is_about">this is about</string>
+    <string name="grop_image">this is Group image</string>
+    <string name="enter_email">Enter email address!</string>
+    <string name="enter_pass">Enter password!</string>
+    <string name="theinterstitial">The interstitial wasn\'t loaded yet.</string>
+    <string name="Your_profile">Your profile is deleted:( Create a account now!</string>
+    <string name="Failed_to_delete">Failed to delete your account!</string>
+    <string name="Failed_to_update">Failed to update password!</string>
+    <string name="Failed_to_update_sign">Password is updated, sign in with new password!</string>
+    <string name="Password_too_short">Password too short, enter minimum 6 characters</string>
+    <string name="user_email">User Email</string>
+    <string name="Enter_user_name">Enter user name address!</string>
+    <string name="full_name_name">Enter full name address!</string>
+    <string name="Registration_Complete">Registration Complete</string>
+    <string name="enter_register">Enter your registered email id</string>
+    <string name="we_sent">We have sent you instructions to reset your password!</string>
+    <string name="to_sent">Failed to send reset email!</string>
 </resources>

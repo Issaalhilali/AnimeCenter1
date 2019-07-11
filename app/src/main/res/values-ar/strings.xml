@@ -61,4 +61,25 @@
     <string name="get_Anime">تطبيق مركز الانمي يمكنك الآن الحصول على الرابط https://play.google
         .com/store</string>
     <string name="get_click_share">النقر على حصة القائمة</string>
+    <string name="share_with_friends">شارك مع صديقك</string>
+    <string name="Home">هذي صفحة الرئيسية </string>
+    <string name="logout_is">هذي صفحة تسجيل الخروج</string>
+    <string name="is_setting">صفحة الاعدادت</string>
+    <string name="is_about">هذي معلومات عنا</string>
+    <string name="grop_image">صفحة مجموعة من الصور</string>
+    <string name="enter_email">ادخل عنوان الايميل!</string>
+    <string name="enter_pass">ادخل كلمة المرور</string>
+    <string name="theinterstitial">The interstitial wasn t loaded yet.</string>
+    <string name="Your_profile">حسابك غير موجود ؟ : قم بانشاء حساب جديد</string>
+    <string name="Failed_to_delete">فشل في حذف حسابك!</string>
+    <string name="Failed_to_update">فشل في تحديث كلمة المرور!</string>
+    <string name="Failed_to_update_sign">تم تحديث كلمة المرور ، تسجيل الدخول بكلمة مرور جديدة!</string>
+    <string name="Password_too_short">كلمة المرور قصيرة جدًا ، أدخل 6 أحرف على الأقل</string>
+    <string name="user_email">البريد الالكتروني للمستخدم</string>
+    <string name="Enter_user_name">أدخل عنوان اسم المستخدم</string>
+    <string name="full_name_name">أدخل عنوان الاسم الكامل!</string>
+    <string name="Registration_Complete">اكتمل التسجيل</string>
+    <string name="enter_register">أدخل معرف بريدك الإلكتروني المسجل</string>
+    <string name="we_sent">لقد أرسلنا لك تعليمات لإعادة تعيين كلمة المرور الخاصة بك!</string>
+    <string name="to_sent">فشل في إرسال إعادة تعيين البريد الإلكتروني!</string>
 </resources>

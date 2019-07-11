@@ -75,7 +75,7 @@ public class SignupActivity extends AppCompatActivity {
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                    Log.d("TAG", getString(R.string.theinterstitial));
                 }
                 startActivity(new Intent(SignupActivity.this, ResetPasswordActivity.class));
             }
@@ -87,7 +87,7 @@ public class SignupActivity extends AppCompatActivity {
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                    Log.d("TAG", getString(R.string.theinterstitial));
                 }
                 finish();
             }
@@ -113,33 +113,33 @@ public class SignupActivity extends AppCompatActivity {
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                    Log.d("TAG",getString(R.string.theinterstitial));
                 }
 
                 final String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
 
                 if (TextUtils.isEmpty(fullName)) {
-                    Toast.makeText(getApplicationContext(), "Enter full name address!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.full_name_name), Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(username)) {
-                    Toast.makeText(getApplicationContext(), "Enter user name address!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.Enter_user_name), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.enter_email), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.enter_pass), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (password.length() < 6) {
-                    Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),getString(R.string.minimum_password) , Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -166,7 +166,7 @@ public class SignupActivity extends AppCompatActivity {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
 
-                                            Toast.makeText(SignupActivity.this, "Registration Complete." , Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(SignupActivity.this,getString(R.string.Registration_Complete) , Toast.LENGTH_SHORT).show();
                                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
 
 

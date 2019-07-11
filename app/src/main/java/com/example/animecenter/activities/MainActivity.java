@@ -187,29 +187,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (menuItem.getItemId()==R.id.db)
         {
-            Toast.makeText(this,"this is Home",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.Home),Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this,MainActivity.class);
             startActivity(intent);
         }else if (menuItem.getItemId()==R.id.imagegroup){
-            Toast.makeText(this,"this is Group image",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.grop_image),Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this,ImaActivity.class);
             startActivity(intent);
         }
         else if (menuItem.getItemId()==R.id.about)
         {
-            Toast.makeText(this,"this is about",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.is_about),Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this,AboutActivity.class);
             startActivity(intent);
         }
         else if (menuItem.getItemId()==R.id.settings)
         {
-            Toast.makeText(this,"this is settings",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.is_setting),Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, SettingActivity.class);
             startActivity(intent);
         }
         else if (menuItem.getItemId()==R.id.logout)
         {
-            Toast.makeText(this,"this is logout",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.logout_is),Toast.LENGTH_SHORT).show();
             FirebaseAuth.getInstance().signOut();
             Intent LoginActivity = new Intent(this, LoginActivity.class);
             startActivity(LoginActivity);

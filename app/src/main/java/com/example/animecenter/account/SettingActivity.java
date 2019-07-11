@@ -115,7 +115,7 @@ public class SettingActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
                 if (user != null && !newPassword.getText().toString().trim().equals("")) {
                     if (newPassword.getText().toString().trim().length() < 6) {
-                        newPassword.setError("Password too short, enter minimum 6 characters");
+                        newPassword.setError(getString(R.string.Password_too_short));
                         progressBar.setVisibility(View.GONE);
                     } else {
                         user.updatePassword(newPassword.getText().toString().trim())
@@ -123,18 +123,18 @@ public class SettingActivity extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
-                                            Toast.makeText(SettingActivity.this, "Password is updated, sign in with new password!", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(SettingActivity.this, getString(R.string.Failed_to_update_sign), Toast.LENGTH_SHORT).show();
                                             signOut();
                                             progressBar.setVisibility(View.GONE);
                                         } else {
-                                            Toast.makeText(SettingActivity.this, "Failed to update password!", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(SettingActivity.this, getString(R.string.Failed_to_update), Toast.LENGTH_SHORT).show();
                                             progressBar.setVisibility(View.GONE);
                                         }
                                     }
                                 });
                     }
                 } else if (newPassword.getText().toString().trim().equals("")) {
-                    newPassword.setError("Enter password");
+                    newPassword.setError(getString(R.string.enter_pass));
                     progressBar.setVisibility(View.GONE);
                 }
             }
@@ -151,12 +151,12 @@ public class SettingActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(SettingActivity.this, "Your profile is deleted:( Create a account now!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(SettingActivity.this, getString(R.string.Your_profile), Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(SettingActivity.this, SignupActivity.class));
                                         finish();
                                         progressBar.setVisibility(View.GONE);
                                     } else {
-                                        Toast.makeText(SettingActivity.this, "Failed to delete your account!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(SettingActivity.this, getString(R.string.Failed_to_delete), Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
                                 }
@@ -177,7 +177,7 @@ public class SettingActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void setDataToView(FirebaseUser user) {
 
-        email.setText("User Email: " + user.getEmail());
+        email.setText(getString(R.string.user_email) + user.getEmail());
 
 
     }
