@@ -5,7 +5,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('C:\\Users\\mille\\Desktop\\AnimeCenter1\\app\\udacity.jks')
+            storeFile file('$rootDir\\udacity.jks')
             storePassword 'udacity123'
             keyAlias = 'udacity'
             keyPassword 'udacity123'
