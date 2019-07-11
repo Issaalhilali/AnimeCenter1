@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:layout_marginTop="5dp"
-    android:padding="8dp"
     android:background="#fff"
     android:id="@+id/container"
     android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
@@ -15,19 +15,18 @@
         android:layout_width="100dp"
         android:layout_height="match_parent"
         android:background="@drawable/loading"
-        android:contentDescription="@null" />
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:orientation="vertical"
-        android:layout_margin="5dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/anime_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Anime Titile"
+            android:text="@string/anime_title"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -35,21 +34,20 @@
             android:id="@+id/category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category"
+            android:text="@string/Category"
             android:textStyle="bold"
             android:layout_marginTop="8dp"/>
         <TextView
             android:id="@+id/rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0.0"
+            android:text="@string/reate"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:background="@drawable/rating_background"
             android:textColor="#000000"
             android:textSize="15sp"
             android:drawableLeft="@drawable/ic_star_black_24dp"
-            android:paddingRight="8dp"
             android:drawableStart="@drawable/ic_star_black_24dp" />
 
         <LinearLayout

@@ -5,10 +5,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('C:\\Users\\mille\\Desktop\\issa12345-AnimeCenter-master-c2018bd\\app\\release\\anime.jks')
-            storePassword 'issa_123'
+            storeFile file('C:\\Users\\mille\\Desktop\\AnimeCenter1\\app\\udacity.jks')
+            storePassword 'udacity123'
             keyAlias = 'udacity'
-            keyPassword 'issa_123'
+            keyPassword 'udacity123'
         }
     }
     compileSdkVersion 28

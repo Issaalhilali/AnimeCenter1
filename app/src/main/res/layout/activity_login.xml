@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/baklog"
     tools:context=".account.SignupActivity">
+
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
@@ -28,7 +29,6 @@
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin"
         tools:ignore="MissingConstraints">
 
         <EditText
@@ -39,7 +39,8 @@
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
+            android:textColorHint="@android:color/white"
+            tools:ignore="Autofill" />
 
 
 
@@ -51,7 +52,8 @@
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
+            android:textColorHint="@android:color/white"
+            tools:ignore="Autofill" />
 
 
         <!-- Login Button -->
@@ -72,7 +74,6 @@
             android:layout_marginTop="20dip"
             android:background="@null"
             android:text="@string/btn_forgot_password"
-            android:textAllCaps="false"
             android:textColor="@color/colorAccent" />
 
         <!-- Link to Login Screen -->
@@ -84,7 +85,6 @@
             android:layout_marginTop="20dip"
             android:background="@null"
             android:text="@string/btn_link_to_register"
-            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="15dp"
             tools:ignore="SpUsage" />

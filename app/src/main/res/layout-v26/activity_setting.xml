@@ -12,14 +12,11 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints,UselessParent">
         <TextView
             android:id="@+id/useremail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/old_email"
-            android:layout_centerHorizontal="true"
             android:layout_marginBottom="46dp"
             android:gravity="center"
             android:hint="@string/email_id"
@@ -32,46 +29,32 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
-            android:maxLines="1"
             tools:layout_editor_absoluteY="82dp"
             tools:layout_editor_absoluteX="8dp"
-            android:layout_above="@+id/password"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="17dp" />
+            android:layout_marginBottom="17dp"
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:focusableInTouchMode="true"
             android:hint="@string/prompt_password"
-            android:imeActionId="@+id/login"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
-            android:maxLines="1"
             tools:layout_editor_absoluteX="126dp"
             tools:layout_editor_absoluteY="125dp"
-            android:layout_above="@+id/newPassword"
-            android:layout_toEndOf="@+id/progressBar"
-            tools:ignore="InvalidImeActionId"
-            android:layout_toRightOf="@+id/progressBar" />
+            tools:ignore="Autofill,InvalidImeActionId"/>
 
         <EditText
             android:id="@+id/newPassword"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:focusableInTouchMode="true"
             android:hint="@string/new_pass"
-            android:imeActionId="@+id/login"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
-            android:maxLines="1"
             tools:layout_editor_absoluteX="106dp"
             tools:layout_editor_absoluteY="168dp"
-            android:layout_above="@+id/changePass"
-            android:layout_alignParentStart="true"
-            tools:ignore="InvalidImeActionId"
-            android:layout_alignParentLeft="true" />
+            tools:ignore="Autofill,InvalidImeActionId" />
 
         <Button
             android:id="@+id/changePass"
@@ -83,9 +66,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             tools:layout_editor_absoluteY="211dp"
-            tools:layout_editor_absoluteX="199dp"
-            android:layout_above="@+id/remove"
-            android:layout_centerHorizontal="true" />
+            tools:layout_editor_absoluteX="199dp" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -105,10 +86,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             tools:layout_editor_absoluteY="259dp"
-            tools:layout_editor_absoluteX="199dp"
-            android:layout_above="@+id/change_password_button"
-            android:layout_alignStart="@+id/changePass"
-            android:layout_alignLeft="@+id/changePass" />
+            tools:layout_editor_absoluteX="199dp" />
 
         <Button
             android:id="@+id/change_password_button"
@@ -118,10 +96,7 @@
             android:text="@string/change_password"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="312dp"
-            android:layout_above="@+id/remove_user_button"
-            android:layout_alignStart="@+id/remove_user_button"
-            android:layout_alignLeft="@+id/remove_user_button" />
+            tools:layout_editor_absoluteY="312dp" />
 
         <Button
             android:id="@+id/remove_user_button"
@@ -131,10 +106,7 @@
             android:text="@string/remove_user"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="408dp"
-            android:layout_above="@+id/sign_out"
-            android:layout_alignStart="@+id/sign_out"
-            android:layout_alignLeft="@+id/sign_out" />
+            tools:layout_editor_absoluteY="408dp" />
 
         <Button
             android:id="@+id/sign_out"
@@ -146,9 +118,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="456dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            tools:layout_editor_absoluteY="456dp" />
         <Button
             android:id="@+id/bn_back"
             android:layout_width="wrap_content"
