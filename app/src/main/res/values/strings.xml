@@ -80,4 +80,6 @@
     <string name="enter_register">Enter your registered email id</string>
     <string name="we_sent">We have sent you instructions to reset your password!</string>
     <string name="to_sent">Failed to send reset email!</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 </resources>

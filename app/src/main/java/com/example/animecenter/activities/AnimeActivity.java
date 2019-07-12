@@ -4,11 +4,14 @@ import android.support.design.widget.CollapsingToolbarLayout;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.animecenter.R;
+
+import io.paperdb.Paper;
 
 public class AnimeActivity extends AppCompatActivity {
     ImageView imageView;
@@ -37,12 +40,21 @@ public class AnimeActivity extends AppCompatActivity {
         CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar_id);
         collapsingToolbarLayout.setTitleEnabled(true);
 
-        TextView tv_name = findViewById(R.id.aa_anime_name);
+        Paper.init(this);
+        final TextView tv_name = findViewById(R.id.aa_anime_name);
         TextView tv_studio = findViewById(R.id.aa_studio);
         TextView tv_categorie = findViewById(R.id.aa_categorie) ;
-        TextView tv_description = findViewById(R.id.aa_description);
+        final TextView tv_description = findViewById(R.id.aa_description);
         TextView tv_rating  = findViewById(R.id.aa_rating) ;
         ImageView img = findViewById(R.id.aa_thumbnail);
+
+        tv_name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Paper.book().write("name",tv_name.getText().toString());
+                Paper.book().write("description",tv_description.getText().toString());
+            }
+        });
 
         // setting values to each view
 

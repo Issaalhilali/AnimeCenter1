@@ -5,7 +5,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('$rootDir\\udacity.jks')
+            storeFile file('$rootDir/udacity.jks')
             storePassword 'udacity123'
             keyAlias = 'udacity'
             keyPassword 'udacity123'
@@ -49,6 +49,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     implementation "android.arch.lifecycle:extensions:1.1.1"
     implementation "android.arch.lifecycle:viewmodel:1.1.1"
-
+    implementation "io.paperdb:paperdb:2.5"
 }
 apply plugin: 'com.google.gms.google-services'
